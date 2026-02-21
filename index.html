@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manojkumar Sankar | Software Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="hero-section">
+          <div class="hero-text">
+            <h1>Manojkumar Sankar</h1>
+            <h2>Software Developer</h2>
+            <p>
+              Passionate about creating robust backend systems and elegant
+              solutions with modern technologies.
+            </p>
+          </div>
+          <div class="profile-img-container">
+            <img
+              src="css/images/manoj.jpeg"
+              alt="Profile photo of Manojkumar Sankar"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div class="nav-brand">MS</div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+        <div class="about-content">
+          <p>
+            Software developer with 1.8+ years of professional experience in
+            Java, ReactJS, Spring Boot, and REST API development. Strong
+            interest in backend systems, microservices architecture, and
+            algorithmic problem solving.
+          </p>
+          <a
+            class="btn"
+            href="resume/Manojkumar_Sankar_Resume.pdf"
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        <div class="skills-grid">
+          <div class="skill-item">Java</div>
+          <div class="skill-item">ReactJS</div>
+          <div class="skill-item">Spring Boot</div>
+          <div class="skill-item">Microservices</div>
+          <div class="skill-item">MySQL</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">GitHub</div>
+          <div class="skill-item">Postman</div>
+          <div class="skill-item">DSA</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+        <div class="project-grid">
+          <div class="project-item">
+            <h3>VirtuCharge – Mobile Recharge App</h3>
+            <p>
+              Full-stack recharge platform with ReactJS frontend and Spring Boot
+              REST APIs.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Virtual Pilgrimage Experience</h3>
+            <p>
+              AR/VR based virtual tourism application with immersive 360°
+              experiences.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Microservices Practice System</h3>
+            <p>
+              Backend microservices built using Spring Boot and REST
+              architecture.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Student Training Portal</h3>
+            <p>
+              Learning management portal to track student progress and
+              assessments.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>JWT Authentication Module</h3>
+            <p>Secure authentication system using JWT and Spring Security.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Form</h2>
+        <p class="section-subtitle">Let's connect and build something great</p>
+        <div class="contact-form-container">
+          <form action="#" method="POST" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+              />
+              <span class="error-message" id="nameError"
+                >Please enter your name (minimum 2 characters)</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+                autocomplete="email"
+              />
+              <span class="error-message" id="emailError"
+                >Please enter a valid email address</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject"
+                >Subject <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is this about?"
+                required
+                minlength="3"
+                maxlength="200"
+              />
+              <span class="error-message" id="subjectError"
+                >Please enter a subject (minimum 3 characters)</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >Message <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message here..."
+                required
+                minlength="10"
+                maxlength="1000"
+              ></textarea>
+              <span class="error-message" id="messageError"
+                >Please enter a message (minimum 10 characters)</span
+              >
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2024 Manojkumar Sankar | Crafted with passion</p>
+    </footer>
+
+    <script>
+      function validateEmail(email) {
+        if (!email.includes("@")) {
+          return { valid: false, message: "Email must contain @ symbol" };
+        }
+        const parts = email.split("@");
+        if (parts.length !== 2) {
+          return {
+            valid: false,
+            message: "Email must have exactly one @ symbol",
+          };
+        }
+
+        const [local, domain] = parts;
+
+        if (!local || local.length < 1) {
+          return {
+            valid: false,
+            message: "Email must have characters before @",
+          };
+        }
+
+        if (!domain || domain.length < 3) {
+          return { valid: false, message: "Email domain is too short" };
+        }
+
+        if (!domain.includes(".")) {
+          return {
+            valid: false,
+            message: "Email domain must contain a dot (.)",
+          };
+        }
+
+        const domainParts = domain.split(".");
+
+        if (domainParts.length < 2) {
+          return {
+            valid: false,
+            message: "Email must have a valid domain extension",
+          };
+        }
+
+        const extension = domainParts[domainParts.length - 1].toLowerCase();
+
+        const validExtensions = [
+          "com",
+          "org",
+          "net",
+          "edu",
+          "gov",
+          "co",
+          "io",
+          "ai",
+          "app",
+          "dev",
+          "tech",
+          "in",
+          "uk",
+          "us",
+          "ca",
+          "au",
+          "de",
+          "fr",
+          "jp",
+          "cn",
+          "info",
+        ];
+
+        if (!validExtensions.includes(extension) && extension.length < 2) {
+          return {
+            valid: false,
+            message:
+              "Email must have a valid extension (e.g., .com, .org, .in)",
+          };
+        }
+
+        if (extension.length < 2) {
+          return {
+            valid: false,
+            message: "Email extension must be at least 2 characters",
+          };
+        }
+
+        const validEmailPattern =
+          /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!validEmailPattern.test(email)) {
+          return { valid: false, message: "Email contains invalid characters" };
+        }
+
+        if (email.includes("..")) {
+          return {
+            valid: false,
+            message: "Email cannot contain consecutive dots",
+          };
+        }
+
+        if (local.startsWith(".") || local.endsWith(".")) {
+          return {
+            valid: false,
+            message: "Email local part cannot start or end with a dot",
+          };
+        }
+
+        return { valid: true, message: "Valid email" };
+      }
+
+      const emailInput = document.getElementById("email");
+      const emailError = document.getElementById("emailError");
+      const emailFormGroup = emailInput.parentElement;
+
+      emailInput.addEventListener("input", function () {
+        const email = this.value.trim();
+
+        if (email.length === 0) {
+          emailFormGroup.classList.remove("error");
+          emailError.style.display = "none";
+          return;
+        }
+
+        const validation = validateEmail(email);
+
+        if (!validation.valid) {
+          emailFormGroup.classList.add("error");
+          emailError.textContent = validation.message;
+          emailError.style.display = "block";
+        } else {
+          emailFormGroup.classList.remove("error");
+          emailError.style.display = "none";
+        }
+      });
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let isValid = true;
+
+          const name = document.getElementById("name");
+          const nameError = document.getElementById("nameError");
+          if (name.value.trim().length < 2) {
+            name.parentElement.classList.add("error");
+            nameError.style.display = "block";
+            isValid = false;
+          } else {
+            name.parentElement.classList.remove("error");
+            nameError.style.display = "none";
+          }
+
+          const email = document.getElementById("email");
+          const emailValidation = validateEmail(email.value.trim());
+          if (!emailValidation.valid) {
+            emailFormGroup.classList.add("error");
+            emailError.textContent = emailValidation.message;
+            emailError.style.display = "block";
+            isValid = false;
+          } else {
+            emailFormGroup.classList.remove("error");
+            emailError.style.display = "none";
+          }
+
+          const subject = document.getElementById("subject");
+          const subjectError = document.getElementById("subjectError");
+          if (subject.value.trim().length < 3) {
+            subject.parentElement.classList.add("error");
+            subjectError.style.display = "block";
+            isValid = false;
+          } else {
+            subject.parentElement.classList.remove("error");
+            subjectError.style.display = "none";
+          }
+
+          const message = document.getElementById("message");
+          const messageError = document.getElementById("messageError");
+          if (message.value.trim().length < 10) {
+            message.parentElement.classList.add("error");
+            messageError.style.display = "block";
+            isValid = false;
+          } else {
+            message.parentElement.classList.remove("error");
+            messageError.style.display = "none";
+          }
+
+          if (isValid) {
+            alert("Thank you for your message! I will get back to you soon.");
+            this.reset();
+
+            document.querySelectorAll(".form-group").forEach((group) => {
+              group.classList.remove("error");
+            });
+            document.querySelectorAll(".error-message").forEach((error) => {
+              error.style.display = "none";
+            });
+          } else {
+            alert("Please fix the errors in the form before submitting.");
+          }
+        });
+
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+      hamburger.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+        hamburger.classList.toggle("active");
+        hamburger.setAttribute("aria-expanded", isOpen);
+      });
+      // Close menu when a link is clicked
+      document.querySelectorAll(".nav-link").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          hamburger.classList.remove("active");
+          hamburger.setAttribute("aria-expanded", false);
+        });
+      });
+
+      ["name", "subject", "message"].forEach((fieldId) => {
+        const field = document.getElementById(fieldId);
+        const errorElement = document.getElementById(fieldId + "Error");
+
+        field.addEventListener("blur", function () {
+          if (this.validity.valid) {
+            this.parentElement.classList.remove("error");
+            errorElement.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
